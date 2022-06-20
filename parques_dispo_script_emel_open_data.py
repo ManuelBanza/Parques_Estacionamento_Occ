@@ -35,4 +35,4 @@ df['data_ocupacao_data'] = df['data_ocupacao'].dt.date
 
 # Exportar
 from datetime import datetime
-df.to_csv(datetime.now().strftime('data_sources/data_transformed/parques_estacionamento_emel_opendata-%Y-%m-%d-%H-%M-%S.csv'), encoding='utf8', index=False)
+df.to_csv((datetime.now()+timedelta(hours=1)).strftime('data_sources/data_transformed/parques_estacionamento_emel_opendata-%Y-%m-%d-%H-%M-%S.csv'), encoding='utf8', index=False)
