@@ -8,7 +8,7 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 import pandas as pd
-import datetime
+from datetime import datetime, timedelta
 import time
 
 # Obter dados do emel open data: https://emel.city-platform.com/opendata/
